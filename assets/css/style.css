@@ -3408,7 +3408,7 @@ input[type="button"].btn-block {
 .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #7F63F4
+    background-color: #71c0be
 }
 
 .dropdown-item.disabled,
@@ -9728,7 +9728,7 @@ a {
 a:focus,
 a:hover {
     text-decoration: none;
-    color: #7F63F4
+    color: #49aca5
 }
 
 a.link {
@@ -11378,7 +11378,7 @@ svg.pulse-svg .third-circle {
 
 .bootstrap-select .btn:hover,
 .bootstrap-select .btn:focus {
-    background: transparent;
+    background: #fff;
     color: #464a53;
     border-color: #DDDFE1;
     outline: none !important
