@@ -10,6 +10,7 @@
   <!-- <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png"> -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/mystyle.css" rel="stylesheet">
+  <link href="assets/css/margin-padding.css" rel="stylesheet">
 
 </head>
 
@@ -42,23 +43,6 @@
         ***********************************-->
     <div class="header">
       <div class="header-content">
-        <div class="header-left">
-          <ul>
-            <li class="icons position-relative mt-2">
-              <!-- <p class="mb-0">Quick Link </p> -->
-            </li>
-            <li class="icons position-relative mt-3">
-              <form action="#">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                  <div class="input-group-append"><span class="input-group-text"><i class="icon-magnifier"></i></span>
-                  </div>
-                </div>
-              </form>
-
-            </li>
-          </ul>
-        </div>
         <div class="header-right">
           <ul>
             <li class="icons">
@@ -133,12 +117,13 @@
                 <div class="dropdown-content-body">
                   <ul>
                     
-                    <li><a href="javascript:void()"><i class="icon-user"></i> <span>My Profile</span></a>
+                    <li><a href="javascript:void()"><span>My Profile</span></a>
                     </li>
-                    <li><a href="javascript:void()"><i class="icon-wallet"></i> <span>Change Password</span></a>
+                    <li><a href="javascript:void()"><span>Change Password</span></a>
                     </li>
-                    <li><a href="javascript:void()"><i class="icon-power"></i> <span>Sign Out</span></a>
+                    <li><a href="javascript:void()"><span>Sign Out</span></a>
                     </li>
+                    
                   </ul>
                 </div>
               </div>
@@ -157,27 +142,30 @@
     <div class="nk-sidebar">
       <div class="nk-nav-scroll">
         <ul class="metismenu" id="menu">
-          <li class="nav-label sidenav-border-bot">Dashboard</li>
+                              <li class="nav-label sidenav-border-bot pad-left-0"><a href="dashboard.html">Dashboard</a>
+                              </li>
+
           <li class="mega-menu mega-menu-lg sidenav-border-bot active">
             <a class="has-arrow" href="javascript:void()" aria-expanded="false">
               <span class="nav-text">Master</span>
             </a>
             <ul aria-expanded="false">
-              <li><a href="#">Location</a></li>
-              <li><a href="#">Country</a>
-              </li>
-              <li><a href="#">Mould Type</a>
-              </li>
-              <li><a href="#">Status</a>
-              </li>
-              <li><a href="#">Clients</a>
-              </li>
-              <li><a href="#">Categories</a>
-              </li>
-              <li><a href="#">Sub - Categories</a>
-              </li>
-              <li><a href="#">Employee Management</a>
-              </li>
+               <li><a href="employee-master.html">Employee</a></li>
+               <li><a href="client-master.html">Client</a>
+               </li>
+               <li><a href="#">Mould Type</a>
+               </li>
+               <li><a href="#">Category</a>
+               </li>
+               <li><a href="#">Sub Category</a>
+               </li>
+               <li><a href="#">Country</a>
+               </li>
+               <li><a href="#">Location</a>
+               </li>
+               <li><a href="#">Status</a></li>
+               <li><a href="#">Check Status</a>
+               </li>
             </ul>
           </li>
           <li class="mega-menu mega-menu-sm sidenav-border-bot"><a class="has-arrow" href="javascript:void()"

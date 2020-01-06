@@ -132,16 +132,13 @@
                             <div class="drop-down dropdown-profile animated bounceInDown">
                                 <div class="dropdown-content-body">
                                     <ul>
+                                        <li><a href="javascript:void()"><span>My Profile</span></a>
+                                        </li>
+                                        <li><a href="javascript:void()"><span>Change Password</span></a>
+                                        </li>
+                                        <li><a href="javascript:void()"><span>Sign Out</span></a>
+                                        </li>
 
-                                        <li><a href="javascript:void()"><i class="icon-user"></i> <span>My
-                                                    Profile</span></a>
-                                        </li>
-                                        <li><a href="javascript:void()"><i class="icon-wallet"></i> <span>Change
-                                                    Password</span></a>
-                                        </li>
-                                        <li><a href="javascript:void()"><i class="icon-power"></i> <span>Sign
-                                                    Out</span></a>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -160,14 +157,14 @@
         <div class="nk-sidebar">
             <div class="nk-nav-scroll">
                 <ul class="metismenu" id="menu">
-                    <li class="nav-label sidenav-border-bot">Dashboard</li>
+                    <li class="nav-label sidenav-border-bot pad-left-0"><a href="dashboard.html">Dashboard</a></li>
                     <li class="mega-menu mega-menu-lg sidenav-border-bot active">
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
                             <span class="nav-text">Master</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="#">Employee</a></li>
-                            <li><a href="#">Client</a>
+                            <li><a href="employee-master.html">Employee</a></li>
+                            <li><a href="client-master.html">Client</a>
                             </li>
                             <li><a href="#">Mould Type</a>
                             </li>
@@ -273,50 +270,25 @@
                         </div>
                         <div class="col ">
                             <div class="form-group pad-top-27">
-                                <div class="dropdown bootstrap-select show-tick" style="width: 131px;"><select
-                                        class="selectpicker show-tick" data-width="auto" tabindex="-98">
+                                <div class="dropdown bootstrap-select show-tick" style="width: 131px;">
+                                    <select class="selectpicker show-tick" data-width="auto" tabindex="-98">
                                         <option>Status</option>
                                         <option>Active</option>
                                         <option>Resign</option>
 
                                     </select>
-                                    <div class="dropdown-menu" role="combobox"
-                                        style="min-width: 0px; max-height: 521.5px; overflow: hidden; min-height: 91px; position: absolute; transform: translate3d(0px, 50px, 0px); top: 0px; left: 0px; will-change: transform;"
-                                        x-placement="bottom-start">
-                                        <div class="inner show" role="listbox" aria-expanded="false" tabindex="-1"
-                                            style="max-height: 509.5px; overflow-y: auto; min-height: 79px;">
-                                            <ul class="dropdown-menu inner show">
-                                                <li class="selected active"><a role="option"
-                                                        class="dropdown-item selected active" aria-disabled="false"
-                                                        tabindex="0" aria-selected="true"><span
-                                                            class=" bs-ok-default check-mark"></span><span
-                                                            class="text">Today</span></a></li>
-                                                <li><a role="option" class="dropdown-item" aria-disabled="false"
-                                                        tabindex="0" aria-selected="false"><span
-                                                            class=" bs-ok-default check-mark"></span><span
-                                                            class="text">In Week</span></a></li>
-                                                <li><a role="option" class="dropdown-item" aria-disabled="false"
-                                                        tabindex="0" aria-selected="false"><span
-                                                            class=" bs-ok-default check-mark"></span><span
-                                                            class="text">In Monthly</span></a></li>
-                                                <li><a role="option" class="dropdown-item" aria-disabled="false"
-                                                        tabindex="0" aria-selected="false"><span
-                                                            class=" bs-ok-default check-mark"></span><span
-                                                            class="text">In Year</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <h4>Auditor Flag</h4>
                             <div class="form-group mb-0">
-                                <input id="chk_2" type="checkbox" class="js-switch js-switch-1 js-switch-md"
-                                    data-size="Medium" data-switchery="true" style="display: none;"><span
-                                    class="switchery switchery-default" <span class="switchery switchery-default"
-                                    style="box-shadow: #00ca10 0px 0px 0px 0px inset;background-color: rgb(14, 195, 2);transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s;"><small
-                                        style="left: 0px; transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span>
+                                <div class="form-group mb-0">
+                                    <input id="chk_2" type="checkbox" class="js-switch js-switch-1 js-switch-md"
+                                        data-size="Medium" />
+                                </div>
+                                    
                             </div>
                         </div>
                         
@@ -350,29 +322,28 @@
                                         <thead>
                                             <tr>
                                                 <th>Sr. No</th>
-                                                <th>Empolyee Code</th>
-                                                <th>Empolyee Name</th>
-                                                <th>Date Of Joining</th>
-                                                <th>Designation</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
+                                                <th>Name</th>
+                                                <th>Email</th>
+                                                <th>Location</th>
+                                                <th>Country</th>
+                                                <th>Active</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <th>1</th>
-                                                <td>S001</td>
-                                                <td>Sayali More</td>
-                                                <td>12-09-2018</td>
-                                                <td>Java Developer</td>
-                                                <td>Active</td>
+                                                <td>Neha Mishra</td>
+                                                <td>neha@gmail.com</td>
+                                                <td>Mumbai</td>
+                                                <td>India</td>
+
                                                 <td><span><a href="javascript:void()" class="mr-4" data-toggle="tooltip"
                                                             data-placement="top" title="" data-original-title="Edit"><i
                                                                 class="fa fa-edit color-black font20"></i> </a><a
                                                             href="javascript:void()" data-toggle="tooltip"
                                                             data-placement="top" title="" data-original-title="Close"><i
                                                                 class="fa fa-close color-black font20"></i></a></span>
-                                                                </td>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <th>2</th>
@@ -389,7 +360,7 @@
                                                                 class="fa fa-close color-black font20"></i></a></span>
                                                 </td>
                                             </tr>
-                                            
+
                                         </tbody>
                                     </table>
                                 </div>

@@ -11174,7 +11174,7 @@ h6 {
 
 .dropdown-profile li:last-child {
     padding: .7rem 1.5rem;
-    border-top: 0.1rem solid rgba(120, 130, 140, 0.13)
+    /* border-top: 0.1rem solid rgba(120, 130, 140, 0.13) */
 }
 
 .dropdown-task .progress {

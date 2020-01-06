@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Client Master</title>
+    <!-- Favicon icon -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png"> -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/mystyle.css" rel="stylesheet">
+    <link href="assets/css/margin-padding.css" rel="stylesheet">
+    <!-- Daterange picker plugins css -->
+    <link href="assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
+    <link href="assets/plugins/innoto-switchery/dist/switchery.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <div class="brand-logo"><a href="#"><img src="assets/img/efficient-logo.png" alt="Efficient Logo"
+                        class="img-responsive logo-efficient">
+                </a>
+            </div>
+            <div class="nav-control">
+                <div class="hamburger"><span class="line"></span> <span class="line"></span> <span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <div class="header-right">
+                    <ul>
+                        <li class="icons">
+                            <a href="javascript:void(0)">
+                                <i class="mdi mdi-bell"></i>
+                                <div class="pulse-css"></div>
+                            </a>
+                            <div class="drop-down animated bounceInDown dropdown-notfication">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void()">
+                                                <span class="mr-3 avatar-icon bg-success-lighten-2"><i
+                                                        class="fa fa-check"></i></span>
+                                                <div class="notification-content">
+                                                    <div class="notification-heading">Druid Wensleydale</div>
+                                                    <span class="notification-text">A wonderful serenit of my entire
+                                                        soul.</span>
+                                                    <small class="notification-timestamp">20 May 2018, 15:32</small>
+                                                </div>
+                                            </a>
+                                            <span class="notify-close"><i class="ti-close"></i>
+                                            </span>
+                                        </li>
+                                        <li><a href="javascript:void()"><span
+                                                    class="mr-3 avatar-icon bg-danger-lighten-2"><i
+                                                        class="fa fa-close"></i></span>
+                                                <div class="notification-content">
+                                                    <div class="notification-heading">Inverness McKenzie</div><span
+                                                        class="notification-text">A
+                                                        wonderful serenit of my entire soul.</span> <small
+                                                        class="notification-timestamp">20 May
+                                                        2018,
+                                                        15:32</small>
+                                                </div>
+                                            </a>
+                                            <span class="notify-close"><i class="ti-close"></i>
+                                            </span>
+                                        </li>
+                                        <li><a href="javascript:void()"><span
+                                                    class="mr-3 avatar-icon bg-success-lighten-2"><i
+                                                        class="fa fa-check"></i></span>
+                                                <div class="notification-content">
+                                                    <div class="notification-heading">McKenzie Inverness</div><span
+                                                        class="notification-text">A
+                                                        wonderful serenit of my entire soul.</span> <small
+                                                        class="notification-timestamp">20 May
+                                                        2018,
+                                                        15:32</small>
+                                                </div>
+                                            </a>
+                                            <span class="notify-close"><i class="ti-close"></i>
+                                            </span>
+                                        </li>
+                                        <li><a href="javascript:void()"><span
+                                                    class="mr-3 avatar-icon bg-danger-lighten-2"><i
+                                                        class="fa fa-close"></i></span>
+                                                <div class="notification-content">
+                                                    <div class="notification-heading">Inverness McKenzie</div><span
+                                                        class="notification-text">A
+                                                        wonderful serenit of my entire soul.</span> <small
+                                                        class="notification-timestamp">20 May
+                                                        2018,
+                                                        15:32</small>
+                                                </div>
+                                            </a>
+                                            <span class="notify-close"><i class="ti-close"></i>
+                                            </span>
+                                        </li>
+                                        <li class="text-left"><a href="javascript:void()" class="more-link">Show All
+                                                Notifications</a> <span class="pull-right"><i
+                                                    class="fa fa-angle-right"></i></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icons">
+                            <a href="javascript:void(0)" class="log-user">
+                                <img src="assets/images/avatar/1.jpg" alt=""> <span>Username</span> <i
+                                    class="fa fa-caret-down f-s-14" aria-hidden="true"></i>
+                            </a>
+                            <div class="drop-down dropdown-profile animated bounceInDown">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li><a href="javascript:void()"><span>My Profile</span></a>
+                                        </li>
+                                        <li><a href="javascript:void()"><span>Change Password</span></a>
+                                        </li>
+                                        <li><a href="javascript:void()"><span>Sign Out</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar">
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label sidenav-border-bot pad-left-0"><a href="dashboard.html">Dashboard</a></li>
+                    <li class="mega-menu mega-menu-lg sidenav-border-bot active">
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <span class="nav-text">Master</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="employee-master.html">Employee</a></li>
+                            <li><a href="client-master.html">Client</a>
+                            </li>
+                            <li><a href="#">Mould Type</a>
+                            </li>
+                            <li><a href="#">Category</a>
+                            </li>
+                            <li><a href="#">Sub Category</a>
+                            </li>
+                            <li><a href="#">Country</a>
+                            </li>
+                            <li><a href="#">Location</a>
+                            </li>
+                            <li><a href="#">Status</a></li>
+                            <li><a href="#">Check Status</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mega-menu mega-menu-sm sidenav-border-bot"><a class="has-arrow" href="javascript:void()"
+                            aria-expanded="false">
+                            <span class="nav-text">User Management</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="#">User Creation</a></li>
+                            <li><a href="#">Role Defination</a>
+                            </li>
+                            <li><a href="#">Role Permission</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mega-menu mega-menu-sm sidenav-border-bot"><a class="has-arrow" href="javascript:void()"
+                            aria-expanded="false">
+                            <span class="nav-text">Setting</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="#">Configuration</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="mega-menu mega-menu-sm sidenav-border-bot"><a class="has-arrow" href="javascript:void()"
+                            aria-expanded="false">
+                            <span class="nav-text">Transaction</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="#">New Requisitions</a></li>
+                            <li><a href="#">Exsisting Requisitions</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="mega-menu mega-menu-sm sidenav-border-bot"><a class="has-arrow" href="javascript:void()"
+                            aria-expanded="false">
+                            <span class="nav-text">Transaction</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="#">New Requisitions</a></li>
+                            <li><a href="#">Exsisting Requisitions</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a class="nav-label text-capitalize font-medium" href="javascript:void()"
+                            aria-expanded="false"><span>Reports</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <div class="container-fluid pad-top-20">
+                <div class="container-fluid">
+                    <div class="row page-titles">
+                        <div class="col p-md-0">
+                            <h4>Client Master</h4>
+                        </div>
+                    </div>
+                    <div class="row pad-top-20">
+                        <div class="col">
+                            <h4>Client Code</h4>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="clientCode" aria-describedby="clientCode">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h4>Client Name</h4>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="clientName" aria-describedby="clientName">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h4>Client Address</h4>
+                            <textarea id="clientMessage" rows="3" class="form-control bg-white text-muted"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row pad-top-50">
+                        <div class="col">
+                            <h4>Client Location</h4>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="clientLocation"
+                                    aria-describedby="clientLocation">
+                            </div>
+                        </div>
+                        <div class="col ">
+                            <h4>Country</h4>
+                            <div class="form-group">
+                                <div class="dropdown bootstrap-select" style="width: 131px;">
+                                    <select class="selectpicker" data-width="auto" tabindex="-98">
+                                        <option>India</option>
+                                        <option>Uk</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col"> </div>
+                    </div>
+                </div>
+                <!-- Contact Person -->
+                <div class="container-fluid pad-top-40">
+                    <div class="col-12 text-center">
+                        <h4> Contact Person </h4>
+                    </div>
+                    <div class="row pad-top-30">
+                        <form class="form-inline w-100">
+                            <div class="col-3">
+                                <div class="form-group">
+                                    <h4>Name</h4>
+                                    <input type="email" class="form-control mb-2 w-100" id="contactName">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-group">
+                                    <h4>E-mail</h4>
+                                    <input type="text" class="form-control mb-2 w-100" id="contactEmail">
+                                </div>
+                            </div>
+                             <div class="col-3">
+                                 <div class="form-group">
+                                      <h4>Mobile Number</h4>
+                                     <input type="text" class="form-control mb-2 w-100" id="contactPhone">
+                                 </div>
+                             </div>
+                            <div class="col-3 text-center">
+                                <span class="pad-top-20">
+                                    <a href="javascript:void()" data-toggle="tooltip" data-placement="top" title=""
+                                        class="text-pale-sky" data-original-title="Add">
+                                        <i class="fa fa-plus color-black add-button"></i>
+                                    </a>
+
+                                </span>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="row pad-top-40">
+                    <div class="col text-right">
+                        <div class="general-button">
+                            <a href="#"><button type="button"
+                                    class="btn btn-success btn-ft color-white pad-top-10 pad-bottom-10">Submit</button></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="general-button">
+                            <a href="#"><button type="button"
+                                    class="btn btn-danger btn-ft color-white color-white pad-top-10 pad-bottom-10">Cancel</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Table 1 -->
+                <div class="container-fluid ">
+                    <div class="row">
+                        <!-- /# column -->
+                        <div class="col-lg-12 pad-top-30">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" style="min-width: 455px;">
+                                            <thead>
+                                                <tr>
+                                                    <th>Sr. No</th>
+                                                    <th>Name</th>
+                                                    <th>Email</th>
+                                                    <th>Location</th>
+                                                    <th>Country</th>
+                                                    <th>Active</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>1</th>
+                                                    <td>Neha Mishra</td>
+                                                    <td>neha@gmail.com</td>
+                                                    <td>Mumbai</td>
+                                                    <td>India</td>
+
+                                                    <td><span><a href="javascript:void()" class="mr-4"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="fa fa-edit color-black font20"></i> </a><a
+                                                                href="javascript:void()" data-toggle="tooltip"
+                                                                data-placement="top" title=""
+                                                                data-original-title="Close"><i
+                                                                    class="fa fa-close color-black font20"></i></a></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>2</th>
+                                                    <td>Rahul Yadav</td>
+                                                    <td>rahul@gmail.com</td>
+                                                    <td>N.Mumbai</td>
+                                                    <td>India</td>
+                                                    <td><span><a href="javascript:void()" class="mr-4"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="fa fa-edit color-black font20"></i> </a><a
+                                                                href="javascript:void()" data-toggle="tooltip"
+                                                                data-placement="top" title=""
+                                                                data-original-title="Close"><i
+                                                                    class="fa fa-close color-black font20"></i></a></span>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- /# column -->
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" style="min-width: 455px;">
+                                            <thead>
+                                                <tr>
+                                                    <th>Sr. No</th>
+                                                    <th>Client Code</th>
+                                                    <th>
+                                                        Client Name
+                                                    </th>
+                                                    <th>Client Address</th>
+                                                    <th>Client Location</th>
+                                                    <th>Country</th>
+                                                    <th>Active</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>1</th>
+                                                    <td>W001</td>
+                                                    <td>Wipro</td>
+                                                    <td>KhoparKhairane</td>
+                                                    <td>Mumbai</td>
+                                                    <td>India</td>
+                                                    <td>
+                                                        <span>
+                                                            <a href="javascript:void()" class="mr-4"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="fa fa-edit color-black font20"></i> </a>
+                                                                    <a
+                                                                href="javascript:void()" data-toggle="tooltip"
+                                                                data-placement="top" title=""
+                                                                data-original-title="Close"><i
+                                                                    class="fa fa-close color-black font20"></i></a></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>2</th>
+                                                    <td>L002</td>
+                                                    <td>L & T</td>
+                                                    <td>Vashi</td>
+                                                    <td>Mumbai</td>
+                                                    <td>India</td>
+                                                    <td><span><a href="javascript:void()" class="mr-4"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="fa fa-edit color-black font20"></i> </a><a
+                                                                href="javascript:void()" data-toggle="tooltip"
+                                                                data-placement="top" title=""
+                                                                data-original-title="Close"><i
+                                                                    class="fa fa-close color-black font20"></i></a></span>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+    <!--**********************************
+            Footer start
+        ***********************************-->
+    <div class="footer">
+        <div class="copyright">
+            <p>Copyright &copy; Designed by <a href="https://themeforest.net/user/digitalheaps">Digitalheaps</a>,
+                Developed by <a href="https://themeforest.net/user/quixlab">Quixlab</a> 2018</p>
+        </div>
+    </div>
+    <!--**********************************
+            Footer end
+        ***********************************-->
+
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="assets/plugins/common/common.min.js"></script>
+    <script src="assets/js/custom.min.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/gleek.js"></script>
+    <script src="assets/js/styleSwitcher.js"></script>
+    <script src="assets/plugins/moment/moment.min.js"></script>
+    <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="assets/js/plugins-init/bs-daterange-picker-init.js"></script>
+    <script src="assets/plugins/innoto-switchery/dist/switchery.min.js"></script>
+    <script src="assets/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="assets/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+    <script src="assets/main/js/plugins-init/switchery-init.js"></script>
+    <script src="assets/js/plugins-init/bootstrap-touchpin-init.js"></script>
+    <script src="assets/js/plugins-init/bootstrap-tagsinput-init.js"></script>
+
+</body>
+
+</html>

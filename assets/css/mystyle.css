@@ -142,11 +142,24 @@
     padding-top: 27px !important;
 }
 hr {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .font20{
     font-size: 20px;
+}
+
+.add-button{
+        color: black;
+        font-size: 20px;
+        border: 1px solid #131313;
+        border-radius: 100%;
+        margin-top: 15px;
+        padding: 10px 12px 10px 12px;
+
+}
+.dropdown-item{
+    font-size: 15px;
 }
