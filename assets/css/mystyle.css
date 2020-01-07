@@ -161,5 +161,20 @@ hr {
 
 }
 .dropdown-item{
-    font-size: 15px;
+    font-size: 17px;
 }
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 220px !important;
+}
+.country-master-general-button {
+    padding-top: 0.7rem;
+}
+.table>tbody>tr>th{
+    font-weight: 500;
+    color: #6a707e;
+}
+.dropdown-menu.show{
+    width: 100%;
+}
+

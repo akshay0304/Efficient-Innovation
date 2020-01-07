@@ -11385,7 +11385,7 @@ svg.pulse-svg .third-circle {
 }
 
 .bootstrap-select.show .btn {
-    background: transparent;
+    background: #fff;
     border-color: #DDDFE1;
     color: #464a53
 }
@@ -12077,7 +12077,7 @@ svg.pulse-svg .third-circle {
 .nk-sidebar .metismenu>li a>.nav-text {
     padding-left: 0;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 [direction="rtl"] .nk-sidebar .metismenu>li a>.nav-text {
@@ -12092,7 +12092,7 @@ svg.pulse-svg .third-circle {
     outline-width: 0;
     transition: all .3s ease-out;
     color: #333;
-    font-size: 1.4rem
+    font-size: 1.6rem
 }
 
 .nk-sidebar .metismenu ul a {
@@ -22001,7 +22001,9 @@ button.multiselect {
 
 .table>thead>tr>th {
     border-bottom: 0 solid rgba(120, 130, 140, 0.13);
-    font-weight: 500
+    font-weight: 500;
+        color: #000;
+        font-size: 15px;
 }
 
 .table-bordered td,
@@ -22029,7 +22031,8 @@ button.multiselect {
 
 tbody tr {
     background: #fff;
-    transition: all 0.5s
+    transition: all 0.5s;
+        font-size: 15px;
 }
 
 .verticle-middle tr td {
@@ -22902,7 +22905,7 @@ table.dataTable.no-footer {
 
 .form-control:hover {
     box-shadow: none;
-    background: #f3f6f9;
+    background: #fff;
     color: #000
 }
 
@@ -22910,7 +22913,7 @@ table.dataTable.no-footer {
 .form-control:focus {
     box-shadow: none;
     border: 1px solid rgba(120, 130, 140, 0.13);
-    background: #f3f6f9;
+    background: #fff;
     color: #000
 }
 
@@ -23122,7 +23125,7 @@ table.dataTable.no-footer {
 .form-control {
     background: #fff;
     min-height: 5rem;
-    padding-left: 1.5rem
+    padding-left: 1rem
 }
 
 .form-control::placeholder {

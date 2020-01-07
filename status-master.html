@@ -5,17 +5,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Client Profile</title>
+    <title>Status Master</title>
     <!-- Favicon icon -->
     <!-- <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png"> -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/mystyle.css" rel="stylesheet">
     <link href="assets/css/margin-padding.css" rel="stylesheet">
-
+    <!-- Daterange picker plugins css -->
+    <link href="assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
+    <link href="assets/plugins/innoto-switchery/dist/switchery.min.css" rel="stylesheet" />
 </head>
 
 <body>
-
     <!--**********************************
         Main wrapper start
     ***********************************-->
@@ -43,23 +47,6 @@
         ***********************************-->
         <div class="header">
             <div class="header-content">
-                <div class="header-left">
-                    <ul>
-                        <li class="icons position-relative mt-2">
-                            <!-- <p class="mb-0">Quick Link </p> -->
-                        </li>
-                        <!-- <li class="icons position-relative mt-3">
-              <form action="#">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                  <div class="input-group-append"><span class="input-group-text"><i class="icon-magnifier"></i></span>
-                  </div>
-                </div>
-              </form>
-
-            </li> -->
-                    </ul>
-                </div>
                 <div class="header-right">
                     <ul>
                         <li class="icons">
@@ -139,21 +126,17 @@
                         </li>
                         <li class="icons">
                             <a href="javascript:void(0)" class="log-user">
-                                <img src="assets/images/avatar/1.jpg" alt=""> <span>My Profile</span> <i
-                                    class="fa fa-caret-down f-s-12" aria-hidden="true"></i>
+                                <img src="assets/images/avatar/1.jpg" alt=""> <span>Username</span> <i
+                                    class="fa fa-caret-down f-s-14" aria-hidden="true"></i>
                             </a>
                             <div class="drop-down dropdown-profile animated bounceInDown">
                                 <div class="dropdown-content-body">
                                     <ul>
-
-                                        <li><a href="javascript:void()"><span>My
-                                                    Profile</span></a>
+                                        <li><a href="javascript:void()"><span>My Profile</span></a>
                                         </li>
-                                        <li><a href="change-password.html"><span>Change
-                                                    Password</span></a>
+                                        <li><a href="change-password.html"><span>Change Password</span></a>
                                         </li>
-                                        <li><a href="javascript:void()"><span>Sign
-                                                    Out</span></a>
+                                        <li><a href="javascript:void()"><span>Sign Out</span></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -241,33 +224,125 @@
             Content body start
         ***********************************-->
         <div class="content-body">
-            <div class="container-fluid pad-top-50">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-12 col-xxl-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title mb-4">Client Profile</h4>
-                                <div class="row pad-top-20">
-                                    <div class="col-sm-6">
-                                        <div class="mb-4 pb-1 employee-details">
-                                            <p>Client Code: <span>47</span></p>
-                                            <p>Client Address: <span>Galaxy Apartment, Mumbai</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="mb-4 pb-1 employee-details">
-                                            <p>Client Name: <span>Neha Mishra</span></p>
-                                            <p>Location: <span>Mulund</span></p>
+            <div class="container-fluid pad-top-20">
+                <div class="container-fluid">
 
-                                        </div>
+                    <div class="row page-titles">
+                        <div class="col p-md-0">
+                            <h4>Status Master</h4>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="row pad-top-40">
+                            <div class="col">
+                                <h4>Status Name</h4>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="subcategoryCode"
+                                        aria-describedby="subcategoryCode">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h4>Status Code</h4>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="subcategoryCode"
+                                        aria-describedby="subcategoryCode">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h4>Description</h4>
+                                <div class="input-group">
+                                    <textarea id="description" rows="3"
+                                        class="form-control bg-white text-muted"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Buttons -->
+                <div class="row pad-top-40 pad-bottom-40">
+                    <div class="col text-right">
+                        <div class="general-button">
+                            <a href="#"><button type="button"
+                                    class="btn btn-success btn-ft color-white pad-top-10 pad-bottom-10">Submit</button></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="general-button">
+                            <a href="#"><button type="button"
+                                    class="btn btn-danger btn-ft color-white color-white pad-top-10 pad-bottom-10">Cancel</button></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Table 1 -->
+                <div class="container-fluid ">
+                    <div class="row">
+                        <!-- /# column -->
+                        <div class="col-lg-12 pad-top-30">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" style="min-width: 455px;">
+                                            <thead>
+                                                <tr>
+                                                    <th>Sr. No</th>
+                                                    <th>Status Names</th>
+                                                    <th>Status Code</th>
+                                                    <th>Status Description</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>1</th>
+                                                    <th>S001</th>
+                                                    <td>Complete</td>
+                                                    <td>Status Description 1</td>
+                                                    <td>
+                                                        <span>
+                                                            <a href="javascript:void()" class="mr-4"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="fa fa-edit color-black font20">
+                                                                </i>
+                                                            </a>
+                                                            <a href="javascript:void()" data-toggle="tooltip" ]
+                                                                data-placement="top" title="" ]
+                                                                data-original-title="Close"><i
+                                                                    class="fa fa-close color-black font20"></i>
+                                                            </a>
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>2</th>
+                                                    <th>S002</th>
+                                                    <td>Incomplete</td>
+                                                    <td>Status Description 2</td>
+                                                    <td><span><a href="javascript:void()" class="mr-4"
+                                                                data-toggle="tooltip" data-placement="top" title=""
+                                                                data-original-title="Edit"><i
+                                                                    class="fa fa-edit color-black font20"></i> </a><a
+                                                                href="javascript:void()" data-toggle="tooltip"
+                                                                data-placement="top" title=""
+                                                                data-original-title="Close"><i
+                                                                    class="fa fa-close color-black font20"></i></a></span>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
+
         <!--**********************************
             Content body end
         ***********************************-->
@@ -276,31 +351,37 @@
         <!--**********************************
             Footer start
         ***********************************-->
-       <div class="footer">
-           <div class="copyright">
-               <p>Copyright &copy; 2019, All Rights Reserved
-               </p>
-           </div>
-       </div>
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; 2019, All Rights Reserved
+                </p>
+            </div>
+        </div>
         <!--**********************************
             Footer end
         ***********************************-->
 
-
-
-    </div>
-    <!--**********************************
+        <!--**********************************
         Main wrapper end
     ***********************************-->
 
-    <!--**********************************
+        <!--**********************************
         Scripts
     ***********************************-->
-    <script src="assets/plugins/common/common.min.js"></script>
-    <script src="assets/js/custom.min.js"></script>
-    <script src="assets/js/settings.js"></script>
-    <script src="assets/js/gleek.js"></script>
-    <script src="assets/js/styleSwitcher.js"></script>
+        <script src="assets/plugins/common/common.min.js"></script>
+        <script src="assets/js/custom.min.js"></script>
+        <script src="assets/js/settings.js"></script>
+        <script src="assets/js/gleek.js"></script>
+        <script src="assets/js/styleSwitcher.js"></script>
+        <script src="assets/plugins/moment/moment.min.js"></script>
+        <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <script src="assets/js/plugins-init/bs-daterange-picker-init.js"></script>
+        <script src="assets/plugins/innoto-switchery/dist/switchery.min.js"></script>
+        <script src="assets/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js"></script>
+        <script src="assets/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+        <script src="assets/main/js/plugins-init/switchery-init.js"></script>
+        <script src="assets/js/plugins-init/bootstrap-touchpin-init.js"></script>
+        <script src="assets/js/plugins-init/bootstrap-tagsinput-init.js"></script>
 
 </body>
 

@@ -134,7 +134,7 @@
                                     <ul>
                                         <li><a href="javascript:void()"><span>My Profile</span></a>
                                         </li>
-                                        <li><a href="javascript:void()"><span>Change Password</span></a>
+                                        <li><a href="change-password.html"><span>Change Password</span></a>
                                         </li>
                                         <li><a href="javascript:void()"><span>Sign Out</span></a>
                                         </li>
@@ -164,21 +164,14 @@
                         </a>
                         <ul aria-expanded="false">
                             <li><a href="employee-master.html">Employee</a></li>
-                            <li><a href="client-master.html">Client</a>
-                            </li>
-                            <li><a href="#">Mould Type</a>
-                            </li>
-                            <li><a href="#">Category</a>
-                            </li>
-                            <li><a href="#">Sub Category</a>
-                            </li>
-                            <li><a href="#">Country</a>
-                            </li>
-                            <li><a href="#">Location</a>
-                            </li>
-                            <li><a href="#">Status</a></li>
-                            <li><a href="#">Check Status</a>
-                            </li>
+                            <li><a href="client-master.html">Client</a> </li>
+                            <li><a href="mould-type-master.html">Mould Type</a></li>
+                            <li><a href="category-master.html">Category</a></li>
+                            <li><a href="sub-category-master.html">Sub Category</a></li>
+                            <li><a href="country-master.html">Country</a></li>
+                            <li><a href="location-master.html">Location</a></li>
+                            <li><a href="status-master.html">Status</a></li>
+                            <li><a href="check-status-master.html">Check Status</a></li>
                         </ul>
                     </li>
                     <li class="mega-menu mega-menu-sm sidenav-border-bot"><a class="has-arrow" href="javascript:void()"
@@ -239,79 +232,83 @@
                             <h4>Employee Master</h4>
                         </div>
                     </div>
-                    <div class="row pad-top-50">
-                        <div class="col">
-                            <h4>Employee Code</h4>
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="employeeCode"
-                                    aria-describedby="employeeCode">
+                    <form action="">
+                        <div class="row pad-top-50">
+                            <div class="col">
+                                <h4>Employee Code</h4>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="employeeCode"
+                                        aria-describedby="employeeCode">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h4>Employee Name</h4>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="employeeName"
+                                        aria-describedby="employeeName">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h4>Date Of Joining</h4>
+                                <input class="form-control input-daterange-datepicker" type="text" name="daterange">
                             </div>
                         </div>
-                        <div class="col">
-                            <h4>Employee Name</h4>
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="employeeName"
-                                    aria-describedby="employeeName">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <h4>Date Of Joining</h4>
-                            <input class="form-control input-daterange-datepicker" type="text" name="daterange">
-                        </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="container-fluid">
-                    <div class="row pad-top-50">
-                        <div class="col">
-                            <h4>Designation</h4>
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="designation" aria-describedby="designation">
+                    <form action="">
+                        <div class="row pad-top-50">
+                            <div class="col">
+                                <h4>Designation</h4>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="designation"
+                                        aria-describedby="designation">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col ">
-                            <div class="form-group pad-top-27">
-                                <div class="dropdown bootstrap-select show-tick" style="width: 131px;">
-                                    <select class="selectpicker show-tick" data-width="auto" tabindex="-98">
-                                        <option>Status</option>
-                                        <option>Active</option>
-                                        <option>Resign</option>
+                            <div class="col ">
+                                <div class="form-group pad-top-27">
+                                    <div class="dropdown bootstrap-select show-tick" style="width: 131px;">
+                                        <select class="selectpicker show-tick" data-width="auto" tabindex="-98">
+                                            <option>Status</option>
+                                            <option>Active</option>
+                                            <option>Resign</option>
 
-                                    </select>
-                                    
+                                        </select>
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <h4>Auditor Flag</h4>
-                            <div class="form-group mb-0">
+                            <div class="col">
+                                <h4>Auditor Flag</h4>
                                 <div class="form-group mb-0">
-                                    <input id="chk_2" type="checkbox" class="js-switch js-switch-1 js-switch-md"
-                                        data-size="Medium" />
+                                    <div class="form-group mb-0">
+                                        <input id="chk_2" type="checkbox" class="js-switch js-switch-1 js-switch-md"
+                                            data-size="Medium" />
+                                    </div>
+
                                 </div>
-                                    
                             </div>
                         </div>
-                        
+                    </form>
+                </div>
+                <div class="row pad-top-20 pad-bottom-20">
+                    <div class="col text-right">
+                        <div class="general-button">
+                            <a href="#"><button type="button"
+                                    class="btn btn-success btn-ft color-white pad-top-10 pad-bottom-10">Submit</button></a>
+                        </div>
                     </div>
-                    <div class="row pad-top-40">
-                        <div class="col text-right">
-                            <div class="general-button">
-                               <a href="#"><button type="button" class="btn btn-success btn-ft color-white pad-top-10 pad-bottom-10">Submit</button></a>
-                               
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="general-button">
-                                <a href="#"><button type="button"
-                                        class="btn btn-danger btn-ft color-white color-white pad-top-10 pad-bottom-10">Cancel</button></a>
-                            </div>
+                    <div class="col">
+                        <div class="general-button">
+                            <a href="#"><button type="button"
+                                    class="btn btn-danger btn-ft color-white color-white pad-top-10 pad-bottom-10">Cancel</button></a>
                         </div>
                     </div>
                 </div>
+                <hr>
             </div>
-            <hr>
+            <!-- Table -->
             <div class="container-fluid">
-                
                 <div class="row">
                     <!-- /# column -->
                     <div class="col-lg-12">
@@ -368,7 +365,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <!--**********************************
@@ -381,8 +377,8 @@
         ***********************************-->
         <div class="footer">
             <div class="copyright">
-                <p>Copyright &copy; Designed by <a href="https://themeforest.net/user/digitalheaps">Digitalheaps</a>,
-                    Developed by <a href="https://themeforest.net/user/quixlab">Quixlab</a> 2018</p>
+                <p>Copyright &copy; 2019, All Rights Reserved
+                </p>
             </div>
         </div>
         <!--**********************************
